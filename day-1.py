@@ -19,3 +19,14 @@ cars[0] = "toyota"
 print(cars[0])
 x = len(cars)
 print(x)
+
+for x in cars:
+  print(x)
+
+cars.append("Honda")
+cars.pop(1)
+print(cars)
+cars.remove("Honda")
+print(cars)
+cars.copy()
+cars
