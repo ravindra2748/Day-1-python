@@ -318,3 +318,23 @@ class person:
     
 p1 = person("lol", 90)
 print(p1)
+
+
+class Playlist:
+    def __init__(self,name):
+        self.name = name
+        self.songs = []
+
+    def add_songs(self,song):
+        self.songs.append(song)
+        print(f"Added : {song}")
+
+    def remove_song(self, song):
+        if song in self.songs:
+            self.songs.remove(song)
+            print(f"Remove : {song}")
+
+    def show_songs(self):
+        print(f"playlist '{self.name} :")
+        for song in self.songs
+        print(f)
