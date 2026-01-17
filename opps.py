@@ -370,3 +370,9 @@ def multiply(a,b):
     return a*b
 
 multiply(8,9)
+
+
+def sub(a,b):
+    return a-b
+
+print(sub(5,3))
