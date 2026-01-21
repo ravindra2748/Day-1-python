@@ -377,8 +377,69 @@ def sub(a,b):
 
 print(sub(5,3))
 
-def divide(a,b):
-    return a/b
+# Polymorphism
 
-x = divide(8,2)
-print(x)
+class car:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Drive!")
+
+class Boat:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("sail!")
+    
+
+class plane:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("FLY!")
+
+car1 = car("maruti", "mustange")
+boat1 = Boat("moris","mou")
+plane1 = plane("Boeing","778")
+
+for x in (car1,boat1,plane1):
+    x.move()
+
+# Inheritance Class Polymorphism
+# What about classes with child classes with the same name? Can we use polymorphism there?
+
+# Yes. If we use the example above and make a parent class called Vehicle, and make Car, Boat, Plane child classes of Vehicle, the child classes inherits the Vehicle methods, but can override them:
+
+class Vehicle:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("move!")
+
+class Car(Vehicle):
+    pass
+
+class Boat(Vehicle):
+    def move(self):
+        print("sail!")
+
+class plane(Vehicle):
+    def move(self):
+        print("Fly!")
+
+car1 = Car("Ford","Mustang")
+boat1 = Boat("Ibia","IBIA20")
+plane1 = plane("aakazu","990")
+
+for x in (car1, boat1, plane1):
+    print(x.brand)
+    print(x.model)
+    x.move()
