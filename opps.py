@@ -586,3 +586,91 @@ class Person:
 p1 = Person("Emil",30)
 
 print(p1.age)
+
+# Python Inner Classes
+# An inner class is a class defined inside another class. The inner class can access the properties and methods of the outer class.
+
+# Inner classes are useful for grouping classes that are only used in one place, making your code more organized.
+
+class outer:
+    def __init__(self):
+        self.name = "outer class"
+
+    class Inner:
+        def __init__(self):
+            self.name = "Inner class"
+
+        def display(self):
+            print("This is thr inner class")
+
+Outer = outer()
+inner = Outer.Inner()
+inner.display()
+# print(Outer.name)
+
+class Outer:
+    def __init__(self):
+        self.name = "Emil"
+
+    class Inner:
+        def __init__(self,Outer):
+            self.outer = outer
+
+        def display(self):
+            print(f"Outer class name :{self.outer.name}")
+
+outer = Outer()
+inner = outer.Inner(outer)
+inner.display()
+
+
+class Car:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+        self.engine = self.Engine()
+
+    class Engine:
+        def __init__(self):
+            self.status = "off"
+
+        def start(self):
+            self.status = "Running"
+            print("Engine started")
+        
+        def stop(self):
+            self.status = "off"
+            print("Engine stopped")
+
+    def drive(self):
+        if self.engine.status == "Running":
+            print(f"Driving the {self.brand} {self.model}")
+        else:
+            print("start the engine first!")
+
+car = Car("Toyota","Corolaa")
+car.drive()
+car.engine.start()
+car.engine.stop()
+car.drive()
+
+
+class Computer:
+    def __init__(self):
+        self.cpu = self.CPU()
+        self.ram = self.RAM()
+
+    class CPU:
+        def process(self):
+            print("Processing data....")
+
+    class RAM:
+        def store(self):
+                print("storing data ..")
+
+computer = Computer()
+computer.cpu.process()
+computer.ram.store()
+
+
+    
