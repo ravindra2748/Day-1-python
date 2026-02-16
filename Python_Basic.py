@@ -62,22 +62,60 @@
 # print(u)
 
 
-numbers_x = [10, 20, 30, 40, 90]
+# numbers_x = [10, 20, 30, 40, 90]
 
-x=(numbers_x[0])
-y=(numbers_x[-1:])
+# x=(numbers_x[0])
+# y=(numbers_x[-1:])
 
-def check(x,y):
-    if x==y:
-        return True
-    else:
-        return False
+# def check(x,y):
+#     if x==y:
+#         return True
+#     else:
+#         return False
 
-print(check(x,y))
+# print(check(x,y))
 
-def check(lst):
-    return lst[0] == lst[-1]
+# def check(lst):
+#     return lst[0] == lst[-1]
 
-print(check(numbers_x))
+# print(check(numbers_x))
+
+
+# list1 = [10, 20, 33, 46, 55]
+# print("Divisible by 5")
+# for i in list1:
+#     if i%5==0:
+#         print(i)
+
+# str_x = "Emma is good developer. Emma is a writer"
+
+# print("Emma appeared",str_x.count("Emma"), "times")
+
+# def count_emma(stat):
+#     print("given string", stat)
+#     count=0
+#     for i in range(len(stat) - 1):
+#         count += stat[i: i+4] == "Emma"
+#     return count
+
+# count = count_emma("Emma us good developer, emma us es")
+# print("eMMA Appperared" , count , "times")
+
+# a = 5
+# b = 10
+
+# print(f"Before swap: a = {a}, b = {b}")
+
+# a , b = b ,a
+# print(f"after swap: a = {a}, b = {b}")
+
+
+
+num = 5
+fact = 1
+for i in range(1, num+1):
+    fact = fact * i
+
+print(f"The factorial of {num} is {fact}")
 
 
