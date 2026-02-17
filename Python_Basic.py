@@ -111,11 +111,208 @@
 
 
 
-num = 5
-fact = 1
-for i in range(1, num+1):
-    fact = fact * i
+# num = 5
+# fact = 1
+# for i in range(1, num+1):
+#     fact = fact * i
 
-print(f"The factorial of {num} is {fact}")
+# print(f"The factorial of {num} is {fact}")
 
 
+# fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+# fruits.append('fig')
+# fruits.pop(1)
+
+# print(fruits)
+
+# S = "Python"
+# G= S[::-1]
+# print(f"original : {S}")
+# print(f"Reversed : {G}")
+
+
+# New = "STRING"
+# new1 = New[::-1]
+# print(new1)
+
+# sentence = "Learning Python is fun!"
+# vowels = "aeiou"
+# count = 0
+
+# for i in sentence.lower():
+#     if i in vowels:
+#         count += 1
+
+# print(f"Number of vowels : {count}")
+
+
+
+# for i in sentence.upper():
+#     if i in vowels:
+#         count +=1
+
+# print(f"the number of upper case vowels{count}")
+
+# nums = [45, 2, 89, 12, 7]
+# largest = max(nums)
+# smallest = min(nums)
+
+# print(f"largest : {largest}")
+
+# data = [1, 2, 2, 3, 4, 4, 4, 5]
+# new_data = list(set(data))
+# print(new_data)
+
+# numbers_x = [75, 65, 35, 75, 30]
+
+# numbers_x_new_f = numbers_x[0]
+# numbers_x_new_L = numbers_x[-1]
+
+# if numbers_x_new_f == numbers_x_new_L:
+#     print(True)
+# else:
+#     print(False)
+
+# num_list = [10, 20, 33, 46, 55]
+
+# for i in num_list:
+#     if i%5==0:
+#         print(i)
+
+# str_x = "Emma is good developer. Emma is a writer"
+
+# count = str_x.count("Emma")
+# print(f"Emma appeared {count} times")
+
+# for num in range(1 , 6):
+#     for i in range(num):
+#         print(num , end = " ")
+
+#     print("\n")
+
+#     # Outer loop for rows
+# for num in range(1, 6):
+#     # Inner loop for repetition
+#     for i in range(num):
+#         print(num, end=" ") # end=" " keeps it on the same line
+#     # New line after each row
+#     print("\n")
+
+# number1 = 121
+# number2= 125
+
+# new_num1 =str(number1)
+# new_num2 =str(number2)
+
+# s1 = new_num1[::-1]
+# s2= new_num1[::1]
+
+# s3 = new_num2[::-1]
+# s4 = new_num2[::1]
+
+# if s1==s2:
+#     print("This is palendrome")
+# else:
+#     print("This is no palindrome")
+
+
+# def check_palindrome(number):
+#     print("Original number" , number)
+
+#     original_str = str(number)
+#     reversed_str = original_str[::-1]
+
+#     if original_str == reversed_str:
+#         print("This is palindrome")
+#     else:
+#         print("This is not palindrome")
+
+# check_palindrome(121)
+# check_palindrome(125)
+
+
+
+# list3 = []
+
+# def merge_list(list1,list2):
+#     result_list = []
+    
+#     for i in list1:
+#         if i % 2!= 0:
+#             result_list.append(i)
+
+#     for i in list2:
+#         if i % 2 == 0:
+#             result_list.append(i)
+
+#     return result_list
+
+
+# list1 = [10, 20, 25, 30, 35]
+# list2 = [40, 45, 60, 75, 90]
+
+# print("result list: " , merge_list(list1 , list2))
+
+
+# def merge_list(list1,list2):
+#     result_list = []
+
+#     for i in list1:
+#         if i % 2 !=0:
+#             result_list.append(i)
+
+#     for i in list2:
+#         if i % 2 == 0:
+#             result_list.append(i)
+        
+#     return result_list
+
+
+
+# list1 = [20,33,43,23,20,10]
+# list2 =  [20,33,43,23,20,10]
+
+# print("result list", merge_list(list1, list2))
+
+# number = 7536
+# print("Given number", number)
+
+# while number>0:
+#     digit = number % 10
+
+#     number = number // 10
+
+#     print(digit ,  end= " ")
+
+# while number > 0:
+#     # Get the last digit
+#     digit = number % 10
+    
+#     # Remove the last digit from number
+#     number = number // 10
+
+# income = 45000
+# tax_payable = 0
+# print("Given income:" , income)
+
+# if income <= 10000:
+#     tax_payable = 0
+# elif income <=20000:
+#     tax_payable = (income-10000) * 10/100
+# else:
+#     tax_payable = 0 + (10000 * 10/100)
+#     tax_payable += (income- 20000) * 20/100
+
+# print("Total income tax to pay is", tax_payable)
+
+
+# for i in range(1,11):
+#     for j in range(1,11):
+#         print(i*j, end="\t")
+#     print("\n")
+
+
+for i in range(5,0,-1):
+    for j in range(0,i):
+        print("*", end= " ")
+    print("\n")

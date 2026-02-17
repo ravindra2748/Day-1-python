@@ -77,3 +77,14 @@ else:
         print("Prime number")
     else:
         print("Not a prime number")
+
+list1 = ["K", "ee", "r", "th"]
+list2 = ["", "", "ha", "na"]
+
+result = ""
+
+for i in range(len(list1)):
+    result += list1[i] + list2[i]
+
+print(result)
+
