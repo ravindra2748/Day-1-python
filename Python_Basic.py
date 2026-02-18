@@ -305,14 +305,92 @@
 
 # print("Total income tax to pay is", tax_payable)
 
-
+# Nested Loops for Multiplication
 # for i in range(1,11):
 #     for j in range(1,11):
 #         print(i*j, end="\t")
 #     print("\n")
 
+# Downward Half-Pyramid Pattern
+# for i in range(5,0,-1):
+#     for j in range(0,i):
+#         print("*", end= " ")
+#     print("\n")
 
-for i in range(5,0,-1):
-    for j in range(0,i):
-        print("*", end= " ")
-    print("\n")
+
+# def exponent(base, exp):
+#     num = exp
+#     result = 1
+#     # Repeat multiplication 'exp' times
+#     while num > 0:
+#         result = result * base
+#         num = num - 1
+#     print(base, "raises to the power of", exp, "is:", result)
+
+# exponent(2, 5)
+# exponent(5, 4)
+
+# def check_palindrome(number):
+#     print("Original number" , number)
+
+#     original_str = str(number)
+#     reversed_str = original_str[::-1]
+
+#     if original_str == reversed_str:
+#         print("This is palindrome")
+#     else:
+#         print("This is not palindrome")
+
+# check_palindrome(121)
+# check_palindrome(125)
+
+
+# Terms=15
+# num1=0
+# num2=1
+# for i in range(Terms):
+#     print(num1 , end = " ")
+
+#     res = num1+num2
+
+#     num1=num2
+#     num2 = res
+
+
+# def is_leap(year):
+
+#     if (year %4 == 0 and year %100 !=0) or (year % 400 ==0):
+#         print(f"{year} is a leap year")
+#     else:
+#         print(f"{year} is not leap year ")
+
+# is_leap(2020)
+
+# dict1 = {"name": "Alice", "age": 25}
+# dict2 = {"city": "New York", "job": "Engineer"}
+
+
+# merge_dict = dict1 | dict2
+# print(merge_dict)
+
+# mer = dict1.update(dict2)
+# print(dict1)
+
+# list_a = [1, 2, 3, 4, 5]
+# list_b = [4, 5, 6, 7, 8]
+
+# common_element = set(list_a) & set(list_b)
+# print("common element :" ,common_element)
+
+numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]
+Evennumbers = []
+oddnumbers = []
+for i in numbers:
+    if i%2==0:
+        Evennumbers.append(i)
+    else:
+        oddnumbers.append(i)
+        
+
+print("Even number",Evennumbers)
+print("odd number ", oddnumbers)
