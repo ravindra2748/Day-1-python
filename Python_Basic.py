@@ -382,15 +382,86 @@
 # common_element = set(list_a) & set(list_b)
 # print("common element :" ,common_element)
 
-numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]
-Evennumbers = []
-oddnumbers = []
-for i in numbers:
-    if i%2==0:
-        Evennumbers.append(i)
-    else:
-        oddnumbers.append(i)
+# numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]
+# Evennumbers = []
+# oddnumbers = []
+# for i in numbers:
+#     if i%2==0:
+#         Evennumbers.append(i)
+#     else:
+#         oddnumbers.append(i)
         
 
-print("Even number",Evennumbers)
-print("odd number ", oddnumbers)
+# print("Even number",Evennumbers)
+# print("odd number ", oddnumbers)
+
+# words = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
+
+# for i in words:
+#     print(i ,len(i))
+
+# from collections import Counter
+# import re
+# text = "apple banana apple cherry banana apple"
+
+
+# words = re.findall(r'\b\w+\b', text.lower())
+# word_counts = Counter(words)
+# print(word_counts)
+
+# text = "apple banana apple cherry banana apple"
+
+# words = text.split()
+# print(words)
+# frequency = {}
+
+# for word in words:
+#     if word in frequency:
+#         frequency[word] +=1
+#     else:
+#         frequency[word] = 1
+
+# print(frequency)
+
+# Print Alternate Prime Numbers
+
+# for num in range(20,2):
+#     is_prime = True
+
+#     for i in range(2, int(num**0.5)+ 1):
+#         if num%i == 0:
+#             is_prime = False
+#             break
+    
+#     if is_prime:
+#         print(f"{num} is a prime number")
+#     else:
+#         print(f"{num} is not prime")
+
+
+prime = []
+
+for num in range(2,21):
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            break
+    else:
+        prime.append(num)
+
+alt_prime = prime[::2]
+print(alt_prime)
+
+
+primes = []
+
+for num in range(2, 21):
+    # Check if number is prime
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            break
+    else:
+        primes.append(num)
+
+# Print alternate primes
+alternate_primes = primes[::2]
+print(alternate_primes)
