@@ -439,29 +439,209 @@
 #         print(f"{num} is not prime")
 
 
-prime = []
+# prime = []
 
-for num in range(2,21):
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            break
-    else:
-        prime.append(num)
+# for num in range(2,21):
+#     for i in range(2, int(num**0.5) + 1):
+#         if num % i == 0:
+#             break
+#     else:
+#         prime.append(num)
 
-alt_prime = prime[::2]
-print(alt_prime)
+# alt_prime = prime[::2]
+# print(alt_prime)
 
 
-primes = []
+# primes = []
 
-for num in range(2, 21):
-    # Check if number is prime
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            break
-    else:
-        primes.append(num)
+# for num in range(2, 21):
+#     # Check if number is prime
+#     for i in range(2, int(num**0.5) + 1):
+#         if num % i == 0:
+#             break
+#     else:
+#         primes.append(num)
 
-# Print alternate primes
-alternate_primes = primes[::2]
-print(alternate_primes)
+# # Print alternate primes
+# alternate_primes = primes[::2]
+# print(alternate_primes)
+
+
+# num = 2
+
+# if num>1:
+#     for i in range(2,int(num**5) + 1):
+#         if (num%i) == 0:
+#             print(f"{num} is not a prime number")
+#             break
+#     else:
+#         print(f"{num} is a prime number")
+# else:
+#     print(f"{num} is not a prime number")
+
+
+# num = 5
+
+# # Primes must be greater than 1
+# if num > 1:
+#     # Use the optimized range we discussed
+#     for i in range(2, int(num**0.5) + 1):
+#         if (num % i) == 0:
+#             print(f"{num} is not a prime number.")
+#             break
+#     else:
+#         # This runs if the 'for' loop finished without finding a divisor
+#         print(f"{num} is a prime number.")
+# else:
+#     print(f"{num} is not a prime number.")
+
+# square = {}
+# for i in range(1,11):
+#     square[i] = i*i
+
+# print(square)
+
+# Character Replacer (Data Sanitization)
+
+# input = "I love coding in Python"
+# s =input.replace(" ", "_")
+# print(s)
+
+# Rows = 5
+
+# for i in Rows:
+#     for s in range(i-1)
+
+# n=5
+# for i in range(1 , n+1):
+#     print("*" * i)
+
+# n = 3
+# for i in range(1,n+1):
+#     print("*" * i)
+
+# n = 5
+# for i in range(1,n+1):
+#     print(" " * (n-1) + "*" * (2* i-1))
+
+# n = 3
+# for i in range(1,n+1):
+#     print(" " * (n-1) + "*" * (2*i - 1))
+
+# n = 4
+# num = 1
+
+# for i in range(1,n+1):
+#     for j in range(i):
+#         print(num , end = " ")
+#         num += 1
+#     print()
+
+# n = 3
+# num = 9
+
+# for i in range(1, n+1):
+#     for j in range(i):
+#         print(num , end = " ")
+#         num += 1
+#     print()
+
+# rows = 5
+
+# for i in range(5,0,-1):
+#     for j in range(i,0,-1):
+#         print(j, end = " ")
+#         # rows +=1
+#     print()
+
+
+# input = "Python"
+# contain_digit = False
+
+
+# for i in input:
+#     if i.isdigit():
+#         contain_digit = True
+#         break
+
+# print(f"The string {input} contain digit: {contain_digit}")
+
+
+# text = "hello world from python"
+
+# s =text.split()
+# empty_list = []
+
+# for i in s:
+#     empty_list.append(i.capitalize())
+
+# result = " ".join(empty_list)
+# print(result)
+
+# import time
+
+# num = 5
+# while num >0:
+#     print(num)
+#     time.sleep(1)
+#     num -=1
+
+# print("Blast off!")
+
+
+# import time
+
+# count = 5
+
+# while count >0:
+#      print(count)
+#      time.sleep(2)
+#      count -=1
+
+# print("ho gya")
+
+   # Fixed Code
+# try:
+#     with open('sample.txt', 'r',encoding= 'utf-8') as f:
+#         for line in f:
+#             print("The file contain",len(line.split()), "words")
+# except:
+#     print("Eroor: The file'sample.txt was not found")
+        
+    
+
+
+# try:
+#     with open("sample.txt", "r",encoding='utf-8') as file:
+#         data = file.read()
+#         words = data.split()
+#         word_count = len(words)
+#         print(f"The file contains {word_count} words.")
+# except FileNotFoundError:
+#     print("Error: The file 'sample.txt' was not found.")
+
+# class Car:
+#   def __init__(self, brand, model, year):
+#     self.brand = brand
+#     self.model = model
+#     self.year = year
+
+#   def display_info(self):
+#     print(f"{self.year} {self.brand} {self.model}")
+
+# car1 = Car("Toyota", "Corolla", 2020)
+# car1.display_info()
+
+class car:
+   def __init__(self,make,model,year):
+      self.make = make
+      self.model = model
+      self.year = year
+
+   def display_info(self):
+      print(f"The {self.year} {self.make} {self.model}'s engine is now running!")
+    
+Car1 = car("Toyota","Camry",2022)
+Car1.display_info()
+      
+      
