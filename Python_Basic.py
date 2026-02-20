@@ -600,7 +600,7 @@
 
 # print("ho gya")
 
-   # Fixed Code
+#    Fixed Code
 # try:
 #     with open('sample.txt', 'r',encoding= 'utf-8') as f:
 #         for line in f:
@@ -632,16 +632,106 @@
 # car1 = Car("Toyota", "Corolla", 2020)
 # car1.display_info()
 
-class car:
-   def __init__(self,make,model,year):
-      self.make = make
-      self.model = model
-      self.year = year
+# class car:
+#    def __init__(self,make,model,year):
+#       self.make = make
+#       self.model = model
+#       self.year = year
 
-   def display_info(self):
-      print(f"The {self.year} {self.make} {self.model}'s engine is now running!")
+#    def display_info(self):
+#       print(f"The {self.year} {self.make} {self.model}'s engine is now running!")
     
-Car1 = car("Toyota","Camry",2022)
-Car1.display_info()
+# Car1 = car("Toyota","Camry",2022)
+# Car1.display_info()
       
-      
+try:
+    # --- Math and Logic Functions ---
+    num1 = 20
+    num2 = 30
+
+    def multi(a, b):
+        multiply = a * b
+        return multiply if multiply <= 1000 else a + b
+    
+    print("Result 1:", multi(num1, num2))
+    print("Result 2:", multi(40, 30))
+
+    # --- Range and Sum ---
+    print("\nPrinting current/previous sums:")
+    previous_num = 0
+    for i in range(11):
+        x_sum = previous_num + i
+        print(f"Current: {i}, Previous: {previous_num}, Sum: {x_sum}")
+        previous_num = i
+
+    # --- String Indexing ---
+    word_str = "PYnative"
+    print("\nEven index chars in PYnative:", word_str[0:8:2])
+
+    # --- User Input Section (Prone to errors) ---
+    word = input('\nEnter word for indexing: ')
+    size = len(word)
+    print("Even index chars:")
+    for i in range(0, size, 2): # Fixed range logic
+        print(f"index[{i}] {word[i]}")
+
+    # --- List Comparisons ---
+    numbers_x = [10, 20, 30, 40, 90]
+    def check_first_last(lst):
+        return lst[0] == lst[-1]
+    print("\nFirst and last equal?", check_first_last(numbers_x))
+
+    # --- String Operations (Count/Replace) ---
+    str_x = "Emma is good developer. Emma is a writer"
+    print(f"Emma appeared {str_x.count('Emma')} times")
+    print("Replace P with n:", "Pynative".replace("P", "n"))
+
+    # --- Factorial ---
+    num = 5
+    fact = 1
+    for i in range(1, num + 1):
+        fact *= i
+    print(f"Factorial of {num}: {fact}")
+
+    # --- Palindrome Check ---
+    def check_palindrome(number):
+        original = str(number)
+        if original == original[::-1]:
+            print(f"{number} is a palindrome")
+        else:
+            print(f"{number} is not a palindrome")
+    
+    check_palindrome(121)
+
+    # --- Income Tax ---
+    income = 45000
+    tax = 0
+    if income <= 10000:
+        tax = 0
+    elif income <= 20000:
+        tax = (income - 10000) * 0.1
+    else:
+        tax = (10000 * 0.1) + (income - 20000) * 0.2
+    print(f"Tax for {income}: {tax}")
+
+    # --- Prime Number List ---
+    primes = []
+    for num in range(2, 21):
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                break
+        else:
+            primes.append(num)
+    print("Primes up to 20:", primes)
+
+except EOFError:
+    print("\nError: No input received.")
+except ValueError as ve:
+    print(f"\nValue Error: {ve}")
+except TypeError as te:
+    print(f"\nType Error: {te}")
+except Exception as e:
+    print(f"\nAn unexpected error occurred: {e}")
+finally:
+    print("\nExecution complete.")
+
