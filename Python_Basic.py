@@ -891,15 +891,192 @@ from collections import Counter
 # print(f_l)
 
 
-string = "Python is awesome"
-# s = string.split()
-# for i in s:
-#     print(i[::-1])
+# string = "Python is awesome"
+# # s = string.split()
+# # for i in s:
+# #     print(i[::-1])
 
-def reverse(sentance):
-    words = sentance.split()
+# def reverse(sentance):
+#     words = sentance.split()
 
-    reverse_words = [i[::-1]for i in words]
-    return " ".join(reverse_words)
+#     reverse_words = [i[::-1]for i in words]
+#     return " ".join(reverse_words)
 
-print(reverse(string))
+# print(reverse(string))
+
+# string = "A man, a plan, a canal: Panama"
+
+# # s =string.isalnum()
+# # print(s)
+
+# def is_palindrome(sentance):
+#     clean_chars = [i.lower() for i in sentance if i.isalnum()]
+
+#     clean_str = "".join(clean_chars)
+
+#     return clean_str == clean_str[::-1]
+
+# print(is_palindrome(string))
+
+# string_list = ["apple", "education", "ice", "ocean", "python", "umbrella"]
+
+# u = [ i for i in string_list if len(i)>5 and i[0].lower() in 'aeiou']
+# print(u)
+
+
+
+# def remove_duplicate(items):
+#     seen = set()
+#     result = []
+
+#     for x in items:
+#         if x not in seen:
+#             result.append(x)
+#             seen.add(x)
+
+#     return result
+
+# list = [1, 2, 2, 3, 1, 4, 2]
+# print(remove_duplicate(list))\
+
+# def remove_duplicate(items):
+#     seen = set()
+#     result = []
+
+#     for x in items:
+#         if x not in seen:
+#             result.append(x)
+#             seen.add(x)
+#     return result
+
+# list = [1, 2, 2, 3, 1, 4, 2]
+# print(remove_duplicate(list))
+
+# Exercise 10: Circular Shift (Rotation)
+# List = [1, 2, 3, 4, 5] 
+# Shift=  2
+# Direction = 'right' 
+# def rotate_list(lst,n,direction='right'):
+#     if not lst:
+#         return lst
+    
+#     n = n % len(lst)
+
+#     if direction == 'right':
+#         return lst[-n:] + lst[:-n]
+#     else:
+#         return lst[n:] + lst[:n]
+    
+# data = [1, 2, 3, 4, 5]
+# print(f"Right Shift 2: {rotate_list(data, 2, 'right')}")
+# print(f"Left Shift 1:  {rotate_list(data, 1, 'left')}")
+
+# from collections import deque
+
+# def rotate_list_deque(lst,n, direction = 'list'):
+#     d = deque(lst)
+
+#     if direction == 'left':
+#         d.rotate(-n)
+#     else:
+#         d.rotate(n)
+
+#     return list(d)
+
+# data = [1, 2, 3, 4, 5]
+# print(f"Right Shift 2: {rotate_list_deque (data, 2, 'right')}")
+# print(f"Left Shift 1:  {rotate_list_deque(data, 1, 'left')}")
+
+
+# d1 = {"a": 1, "b": 2}
+# d2 = {"b": 3, "c": 4}
+
+# # d3 =d1.update(d2)
+# # print(d3)
+
+# def merge_and_group(dict1, dict2):
+#     combined = {}
+
+#     all_keys = set(dict1.keys()) | set(dict2.keys())
+
+#     for key in all_keys:
+#         values = []
+#         if key in dict1:
+#             values.append(dict1[key])
+#         if key in dict2:
+#             values.append(dict2[key])
+#         combined[key] = values
+
+#     return combined
+
+# print(merge_and_group(d1,d2))
+
+
+
+# d3= d1.keys()|d2.keys()
+# print(d3)
+
+# def merge_combine(dict1,dict2):
+#     combined = {}
+
+#     all_keys = set(dict1.keys()|dict2.dict2.keys)
+
+#     for key in all_keys:
+#         value = []
+
+#         if key in dict1:
+#             value.append(dict1[key])
+#         if key in dict2:
+#             value.append(dict2[key])
+#         combined[key]= value
+
+#     return combined
+
+
+
+
+# def merge_combined(dict1,dict2):
+#     combined = {}
+
+#     all_keys = set(dict1.key()|dict2.key())
+    
+
+#     for key in all_keys:
+#         values = []
+
+#         if key in dict1:
+#             values.append(dict1[key])
+#         if key in dict2:
+#             values.append(dict2[key])
+#         combined[key]=values
+    
+#     return combined
+
+# d1 = {"a": 1, "b": 2}
+# d2 = {"b": 3, "c": 4}
+
+# def merge_combine(dict1,dict2):
+#     combined = {}
+
+#     all_keys = set(dict1.(key)|dict2(key))
+
+#     for key in all_keys:
+#         values = []
+
+#         for key in dict1:
+
+
+numbers = [2,4,5,34,54,2]
+
+min_value = numbers[0]
+max_value = numbers[0]
+
+for num in numbers:
+    if num <min_value:
+        min_value = num
+    if num > max_value:
+        max_value = num
+
+
+print("minimum",min_value)
+print("maximum",max_value)
