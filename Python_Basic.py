@@ -1068,15 +1068,225 @@ from collections import Counter
 
 numbers = [2,4,5,34,54,2]
 
-min_value = numbers[0]
-max_value = numbers[0]
+# min_value = numbers[0]
+# max_value = numbers[0]
 
-for num in numbers:
-    if num <min_value:
-        min_value = num
-    if num > max_value:
-        max_value = num
+# for num in numbers:
+#     if num <min_value:
+#         min_value = num
+#     if num > max_value:
+#         max_value = num
 
 
-print("minimum",min_value)
-print("maximum",max_value)
+# print("minimum",min_value)
+# print("maximum",max_value)
+
+# min_value = numbers[0]
+
+# for i in numbers:
+#     if i > min_value:
+#         min_value = i
+
+# print("minimum", min_value)
+
+# rev = []
+
+# for i in range(len(numbers)-1,-1,-1):
+#     rev.append(numbers[i])
+
+# print(rev)
+
+
+# num = [12,3,4,5,6,7]
+
+# rev = []
+
+# for i in range(len(num)-1,-1,-1):
+#     rev.append(num[i])
+
+# print(rev)
+
+
+# total = 0
+
+# for i in num:
+#     total = total + i
+
+# print(total)
+
+# count_even = 0
+# count_odd = 0
+
+# for i in num:
+#     if i%2==0:
+#         count_even +=1
+#     else:
+#         count_odd +=1
+
+# print("even:", count_even)
+# print("odd", count_odd)
+
+# a = 10
+# b = 20
+# c = 8
+
+# largest = a
+
+# if b>largest:
+#     largest = b
+
+# if c > largest:
+#     largest = c
+
+# print(largest)
+
+# num = 121
+# temp = num
+# rev = 0
+
+# while num>0:
+#     digit = num%10
+#     rev = rev * 10 + digit
+#     num = num // 10
+
+# if temp == rev:
+#     print("Palindorme")
+# else:
+#     print("Not plaindrome")
+
+# num = 5
+# for i in range(1,11):
+#     print(i*num)
+
+# s = "Python"
+# count = 0
+
+# for char in s:
+#     count +=1
+
+# print(count)
+
+# num = 5
+# fact =1
+
+# for i in range(1,num+1):
+#     fact = fact * 1
+
+# print(fact)
+
+# num = 5
+# fact = 1
+
+# for i in range(1,num+1):
+#     fact  = fact *1
+
+# print(fact)
+
+# import math
+
+# num = 5
+
+# # Method 1: Using math.factorial()
+# fact = math.factorial(num)
+# print("Factorial:", fact)
+
+# # Method 2: Using recursion
+# def factorial_recursive(n):
+#     return 1 if n <= 1 else n * factorial_recursive(n - 1)
+
+# print("Factorial (Recursive):", factorial_recursive(num))
+
+
+# num = 7
+# count = 0
+
+# for i in range(1,num+1):
+#     if num % 1 == 0:
+#         count += 1
+#     if count == 2:
+#         print("prime")
+#     else:
+#         print("Not prime")
+
+# num = 12345
+# count = 0
+
+# while num>0:
+#     num = num//10
+#     count +=1
+
+# print(count)
+
+# numbers = [1,23,4,3,3,4,4,3,5,6,7]
+# unique = []
+
+# for num in numbers:
+#     if num not in unique:
+#         unique.append(num)
+
+# print(unique)
+
+# text = "python is easy" 
+# words = text.split()
+
+# print(len(words))
+
+
+# text = "programming"
+
+# for char in text:
+#     if text.count(char) == 2:
+#         print(char)
+#         break
+
+# for char in text:
+#     if text.count(char)> 1:
+#         print(char)
+
+# num = 5
+# fact = 1
+
+# for i in range(1,num+1):
+#     fact *= i
+
+# print(fact)
+
+# num = 5
+# fact = 1
+
+# for i in range(1,num+1):
+#     fact *= i
+
+# print(fact)
+
+num = 7
+count = 0
+
+
+for i in range(1,num+1):
+    if num %i==0:
+        count +=1
+
+if count == 2:
+    print("Prime number")
+else:
+    print("Not prime")
+    
+a = 0
+b = 1
+
+for i in range(10):
+    print(a)
+    c= a+b
+    a = b
+    b = c
+
+
+text = "python"
+
+count = 0
+
+for i in text:
+    count += 1
+
+print(count)
