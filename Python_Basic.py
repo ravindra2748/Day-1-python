@@ -1259,34 +1259,231 @@ numbers = [2,4,5,34,54,2]
 
 # print(fact)
 
-num = 7
-count = 0
+# num = 7
+# count = 0
 
 
-for i in range(1,num+1):
-    if num %i==0:
-        count +=1
+# for i in range(1,num+1):
+#     if num %i==0:
+#         count +=1
 
-if count == 2:
-    print("Prime number")
-else:
-    print("Not prime")
+# if count == 2:
+#     print("Prime number")
+# else:
+#     print("Not prime")
     
-a = 0
-b = 1
+# a = 0
+# b = 1
 
-for i in range(10):
-    print(a)
-    c= a+b
-    a = b
-    b = c
+# for i in range(10):
+#     print(a)
+#     c= a+b
+#     a = b
+#     b = c
 
 
-text = "python"
+# text = "python"
 
-count = 0
+# count = 0
 
-for i in text:
-    count += 1
+# for i in text:
+#     count += 1
 
-print(count)
+# print(count)
+
+d1 = {"a": 1, "b": 2}
+d2 = {"b": 3, "c": 4}
+
+# d3 = {}
+
+# for i in d1:
+#     d3[i] = [d1[i]]
+
+# for i in  d2:
+#     if i in d3:
+#         d3[i].append(d2[i])
+#     else:
+#         d3[i] = [d2[i]]
+# print(d3)
+
+# d3 = {}
+
+# for key in d1:
+#     d3[key] = [d1[key]]
+
+# for key in d2:
+#     if key in  d3:
+#         d3[key].append(d2[key])
+#     else:
+#         d3[key] = [d2[key]]
+# print(d3)
+
+d1 = {'x':10,'y':20}
+d2 = {'x':30,'z':40}
+d3 = {'y':50,'z':60}
+
+result = {}
+
+# for key in d1:
+#     result[key] = [d1[key]]
+# for key in d2:
+#     if key in result:
+#         result[key].append(d2[key])
+#     else:
+#         result[key] = [d2[key]]
+# for key in d3:
+#     if key in result:
+#         result[key].append(d3[key])
+#     else:
+#         result[key] = [d3[key]]
+
+# print(result)
+
+# dicts = [d1,d2,d3]
+# print(dicts)
+
+# for d in dicts:
+#     print(d)
+#     for key in d:
+#         print(key)
+#         if key in result:
+#             result[key].append(d[key])
+#         else:
+#             result[key] = d[key]
+# print(result)
+
+# d1 = {'x':10,'y':20}
+# d2 = {'x':30,'z':40}
+# d3 = {'y':50,'z':60}
+
+# result = {}
+
+# dicts = [d1,d2,d3]
+# print(dicts)
+
+# for d in dicts:
+#     print(d)
+#     for key in d:
+#         print(key)
+#         if key in result:
+#             result[key].append(d[key])
+#         else:
+#             result[key] = [d[key]]
+
+# print(result)
+
+# d1 = {'a':5,'b':10}
+# d2 = {'a':3,'b':2,'c':7}
+
+# result = {}
+
+# for i in d1:
+#     result[i] = d1[i]
+# for i in d2:
+#     if i in result:
+#         result[i] = result[i]+d2[i]
+#     else:
+#         result[i] = d2[i]
+# print(result)
+
+
+
+# data = [
+# {'a':1},
+# {'a':2},
+# {'b':3},
+# {'a':4},
+# {'b':5}
+# ]
+
+# result = {}
+
+# for i in data:
+#     for key in i:
+#         if key in result:
+#             result[key].append(i[key])
+#         else:
+#             result[key] = [i[key]]
+
+# print(result)
+
+# d1 = {'a':1,'b':2}
+# d2 = {'a':1,'b':3}
+
+# result = {}
+
+# for i in d1:
+#     result[i]= [d1[i]]
+
+# for i in d2:
+#     if i in result:
+#         if d2[i] not in result[i]:
+#             result[i].append(d2[i])
+#         else:
+#             result[i]= [d2[i]]
+# print(result)
+
+
+# d1 = {"a": 1, "b": 2}
+# d2 = {"b": 3, "c": 4}
+
+# def merge_and_group(dict1,dict2):
+#     combined = {}
+
+#     all_keys = set(dict1.keys()) | set(dict2.keys())
+
+#     for key in all_keys:
+#         values = []
+
+#         if key in dict1:
+#             values.append(dict1[key])
+#         if key in dict2:
+#             values.append(dict2[key])
+#         combined[key] = values
+    
+#     return combined
+
+# print(merge_and_group(d1,d2))
+    
+# data = {"Orwell": ["1984", "Animal Farm"], "Huxley": ["Brave New World"]}
+
+# result = {}
+
+# for author in data:
+#     books = data[author]
+
+#     for book in books:
+#         result[book] = author
+    
+# print(result)
+
+# employees = [
+# {"name": "A", "salary": 50},
+# {"name": "B", "salary": 70},
+# {"name": "C", "salary": 60}
+# ]
+
+# employees.sort(key=lambda x:x["salary"], reverse= True)
+
+# print(employees)
+
+# Set_A =  {1, 2, 3}
+# Set_B = {1, 2, 3, 4, 5}
+
+# s = Set_A.issubset(Set_B)
+# print(s)
+
+# if s is True:
+#     print("Set A is a subset of Set B")
+# else:
+#     print("set A is not subset of B")
+
+
+list1 = [101, 102, 103]
+list2 = [103, 104, 105]
+
+set1 = set(list1)
+set2 = set(list2)
+
+set3 = set1^set2
+print(set3)
