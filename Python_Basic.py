@@ -1479,11 +1479,308 @@ result = {}
 #     print("set A is not subset of B")
 
 
-list1 = [101, 102, 103]
-list2 = [103, 104, 105]
+# list1 = [101, 102, 103]
+# list2 = [103, 104, 105]
 
-set1 = set(list1)
-set2 = set(list2)
+# set1 = set(list1)
+# set2 = set(list2)
 
-set3 = set1^set2
-print(set3)
+# set3 = set1^set2
+# print(set3)
+
+# def age_calculator(year,month,date):
+
+# from datetime import date
+
+
+# # Date of birth
+# birth_year = 2000
+# birth_month = 5
+# birth_day = 15
+
+# birth_date = date(birth_year,birth_month,birth_day)
+# print(birth_date)
+
+# today = date.today()
+# print(today)
+
+# years = today.year - birth_date.year
+# months = today.month - birth_date.month
+# days = today.day - birth_date.day
+
+# if days <0:
+#     months -= 1
+#     days += 30
+
+# if months<0:
+#     years -= 1
+#     months += 12
+
+# print("Age:",years,"years",months,"months",days,"Days")
+
+# from datetime import date
+
+# year = int(input("Enter birth year: "))
+# month = int(input("Enter birth month: "))
+# day = int(input("Enter birth day: "))
+
+# birth_date = date(year,month,day)
+# today = date.today()
+
+# years = today.year - birth_date.year
+# months = today.month - birth_date.month
+# days = today.day - birth_date.day
+
+# if days < 0:
+#     months -= 1
+#     days += 30
+
+# if months < 0:
+#     years -= 1
+#     months +=12
+
+# print("your age: ")
+# print(years , "Years", months , "Months", days , "Days")
+
+# from datetime import date , datetime
+
+
+# def calculate_age():
+
+#     birth_input = input("Enter your birthdate(yyyy-mm-dd): ")
+
+#     birth_date = datetime.strptime(birth_input , "%Y-%m-%d").date()
+
+#     today = date.today()
+
+#     years = today.year - birth_date.year
+#     months = today.month - birth_date.month
+#     days = today.day - birth_date.day
+
+#     if days <0:
+#         months -= 1
+#         days += 30
+    
+#     if months <0:
+#         years -= 1
+#         months += 12
+
+    
+#     print("Your age:",years,"years",months,"months",days,"days")
+
+# calculate_age()
+
+# from datetime import date, datetime
+
+# def calculate_age():
+    
+#     birth_input = input("Enter your birthdate (YYYY-MM-DD): ")
+    
+#     birth_date = datetime.strptime(birth_input, "%Y-%m-%d").date()
+    
+#     today = date.today()
+    
+#     years = today.year - birth_date.year
+#     months = today.month - birth_date.month
+#     days = today.day - birth_date.day
+    
+#     if days < 0:
+#         months -= 1
+#         days += 30
+        
+#     if months < 0:
+#         years -= 1
+#         months += 12
+        
+#     print("Your Age:", years, "Years", months, "Months", days, "Days")
+
+# calculate_age()
+
+# from datetime import datetime
+# from deteutil.relativedelta import relativedelta
+
+# import time
+
+# seconds = 5
+
+# while seconds >0:
+#     print(seconds)
+#     time.sleep(1)
+#     seconds -= 1
+
+# print("Time's up!")
+
+# import time
+
+# time_in_seconds = 10
+
+# while time_in_seconds:
+#     mins, secs = divmod(time_in_seconds,60)
+
+#     timer = f"{mins:02d}:{secs:02d}"
+
+#     print(timer, end="\r")
+
+#     time.sleep(1)
+
+#     time_in_seconds -= 1
+
+# print("time's up!")
+
+# import time 
+
+# time_in_seconds = 10
+
+# while time_in_seconds:
+#     mins , secs = divmod(time_in_seconds,60)
+
+#     timer = f"{mins:02d}:{secs:02d}"
+
+#     print(timer, end="\r")
+
+#     time.sleep(1)
+
+#     time_in_seconds -= 1
+
+# print("times up!")
+
+# import time
+
+# seconds = int(input("Enter time in seconds: "))
+
+# while seconds:
+    
+#     hrs = seconds // 3600
+#     mins = (seconds % 3600) // 60
+#     secs = seconds % 60
+    
+#     print(f"{hrs:02d}:{mins:02d}:{secs:02d}", end="\r")
+    
+#     time.sleep(1)
+    
+#     seconds -= 1
+
+# print("Time's up!")
+
+# from datetime import datetime
+
+# def new_year_countdown():
+
+#     current_date = datetime(2026,3,12)
+#     new_year = datetime(2027,1,1)
+
+#     remaining = new_year - current_date
+
+#     days = remaining.days
+
+#     hours = remaining.seconds // 3600
+
+#     minutes = (remaining.seconds % 3600) // 60
+
+#     print("Days:" , days)
+#     print("Hours:" , hours)
+#     print("Minutes:", minutes)
+
+# new_year_countdown()
+
+from datetime import datetime , timedelta
+
+# def new_year_countdown():
+
+#     now = datetime.now()
+
+#     next_year = now.year + 1
+
+#     new_year = datetime(next_year,1,1)
+
+#     remaining = new_year - now
+
+#     days = remaining.days
+#     hours = remaining.seconds // 3600
+#     minutes = (remaining.seconds%3600) // 60
+#     seconds = remaining.seconds % 60
+
+#     print("Days: ", days)
+#     print("Hours: ", hours)
+#     print("Minutes: ", minutes)
+#     print("seconds: ", seconds)
+
+# new_year_countdown()
+
+# start = datetime(2026,1,1)
+# end = datetime(2026,1,10)
+
+# business_days = 0
+
+# current = start
+
+# while current <= end:
+#     if current.weekday()<5:
+#         business_days +=1
+    
+#     current += timedelta(days=1)
+
+# print("Business days :", business_days)
+
+# name = input("Enter your name: ")
+# profession = input("Enter your profession: ")
+# interest = input("Enter your interest: ")
+
+# print("\nYour Stylish Bios:\n")
+
+# print("✨", name, "|", profession)
+# print("🚀 Passionate about", interest)
+# print("💡 Always learning, always growing")
+
+# print("\n---")
+
+# print("🔥", name)
+# print("📊", profession)
+# print("⚡ Love:", interest)
+# print("🌍 Dream Big")
+
+# print("\n---")
+
+# print("👨‍💻", name, "-", profession)
+# print("🐍", interest, "enthusiast")
+# print("📈 Future Creator")
+
+# name = input("Name: ")
+# profession = input("profession: ")
+# interest = input("Interest: ")
+
+# bios = [
+#     f" ** {name} | {profession}\n {interest} Lover\n Growth Mindeset",
+#     f" ** {name}\n {profession}\n Exploring {interest}",
+#     f" ** {name}\n {profession}\n passion for {interest}",
+#     f" ** {name}\n  Buildig future\n Learning {interest}"
+# ]
+
+# print("\nGenerated Bios:\n")
+
+# for bio in bios:
+#     print(bio)
+#     print("---------")
+
+class powerofTwo:
+
+    def __init__(self,max_exponent):
+        self.max_exponent = max_exponent
+        self.current = 0
+
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+
+        if self.current <= self.max_exponent:
+            result = 2 ** self.current
+            self.current += 1
+            return result
+        else:
+            raise StopIteration
+        
+powers = powerofTwo(5)
+
+for num in powers:
+    print(num)
