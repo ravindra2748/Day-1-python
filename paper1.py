@@ -237,18 +237,68 @@
         
 # print(result)
 
-matrix = [[1,2,3],
-          [4,5,6],
-          [7,8,9]]
+# count letters and digits
+
+# s = "abc123"
+
+# letters = 0
+# digits = 0
+
+# for i in s:
+#     if i.isalpha():
+#         letters +=1
+#     elif i.isdigit():
+#         digits +=1
+
+# print({"letters":letters,"digits":digits})
+
+# data = [1,[2,[3,4]]]
+
+# result = []
+
+# for i in data:
+#     if type(i) == list:
+#         for j in i:
+#             if type(j) == list:
+#                 for k in j:
+#                     result.append(k)
+#             else:
+#                 result.append(j)
+#     else:
+#         result.append(i)
+
+# print(result)
+
+# data=[1,2,[3,4,[5,6]]]
+
+# result = []
+
+# for i in data:
+#     if type(i) == list:
+#         for j in i:
+#             if type(j) == list:
+#                 for k in j:
+#                     result.append
 
 
-n = len(matrix)
+# numbers = [1, 2, 3, 2, 4, 5, 1, 6]
+# seen = set()
+# duplicate = set()
 
-for i in range(n):
-    for j in range(i,n):
-        matrix[i][j],matrix[j][i] = matrix[j][i], matrix[i][j]
-    
-    for row in matrix:
-        row.reverse()
-    
-print(matrix)
+# for i in numbers:
+#     if i in seen:
+#         duplicate.add(i)
+#     else:
+#         seen.add(i)
+# print(duplicate)
+       
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = next
+
+print(Node)
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
