@@ -1784,3 +1784,27 @@ from datetime import datetime , timedelta
 
 # for num in powers:
 #     print(num)
+
+numbers = [1, 2, 3, 2, 4, 5, 1, 6]
+
+v = set(numbers)
+print(v)
+
+for i in range (len(numbers)):
+    for j in range(i+1 , len(numbers)):
+        if numbers[i] == numbers[j]:
+            print(numbers[i])
+
+def find_duplicates(numbers):
+    seen = set()
+    duplicates = set()
+
+    for num in numbers:
+        if num in seen:
+            duplicates.add(num)
+        else:
+            seen.add(num)
+    
+    return duplicates
+
+print(find_duplicates(numbers))
