@@ -231,15 +231,17 @@ print(f"\nType: {type(loaded_data)}")
 
 # print(a)
 
-a = 12
-b = 18
+# a = 12
+# b = 18
 
-temp_a = a
-temp_b = b
+# temp_a = a
+# temp_b = b
 
-while b!=0:
-    a,b = b,a%b
+# while b!=0:
+#     a,b = b,a%b
 
-gcd = a
-lcm = (temp_a*temp_b)//a
-print(lcm)
+# gcd = a
+# lcm = (temp_a*temp_b)//a
+# print(lcm)
+
+print("Hello")

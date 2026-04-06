@@ -340,3 +340,10 @@ def splitter_decorator(function):
 def hello():
    return 'Hello World'
 hello()   # output => [ 'hello' , 'world' ]
+
+for i in xrange(10):    # numbers from o to 9
+   print (i)       # output => 0 1 2 3 4 5 6 7 8 9
+for i in xrange(1,10):    # numbers from 1 to 9
+   print (i)       # output => 1 2 3 4 5 6 7 8 9
+for i in xrange(1, 10, 2):    # skip by two for next
+   print (i)       # output => 1 3 5 7 9
