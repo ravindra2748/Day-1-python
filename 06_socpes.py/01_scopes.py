@@ -30,3 +30,17 @@ def f1():
     f2()
 
 f1()
+
+# closure
+
+def chaicoder(num):
+    def actual(x):
+        return x ** num
+    return actual
+
+f = chaicoder(2)
+g = chaicoder(3)
+
+print(f(3))
+print(f(4))
+print(g(3))
