@@ -321,29 +321,195 @@
 # print(temp)   # output => 20
 
 
-# decorator function to convert to lowercase
-def lowercase_decorator(function):
-   def wrapper():
-       func = function()
-       string_lowercase = func.lower()
-       return string_lowercase
-   return wrapper
-# decorator function to split words
-def splitter_decorator(function):
-   def wrapper():
-       func = function()
-       string_split = func.split()
-       return string_split
-   return wrapper
-@splitter_decorator # this is executed next
-@lowercase_decorator # this is executed first
-def hello():
-   return 'Hello World'
-hello()   # output => [ 'hello' , 'world' ]
+# # decorator function to convert to lowercase
+# def lowercase_decorator(function):
+#    def wrapper():
+#        func = function()
+#        string_lowercase = func.lower()
+#        return string_lowercase
+#    return wrapper
+# # decorator function to split words
+# def splitter_decorator(function):
+#    def wrapper():
+#        func = function()
+#        string_split = func.split()
+#        return string_split
+#    return wrapper
+# @splitter_decorator # this is executed next
+# @lowercase_decorator # this is executed first
+# def hello():
+#    return 'Hello World'
+# hello()   # output => [ 'hello' , 'world' ]
 
-for i in xrange(10):    # numbers from o to 9
-   print (i)       # output => 0 1 2 3 4 5 6 7 8 9
-for i in xrange(1,10):    # numbers from 1 to 9
-   print (i)       # output => 1 2 3 4 5 6 7 8 9
-for i in xrange(1, 10, 2):    # skip by two for next
-   print (i)       # output => 1 3 5 7 9
+# for i in xrange(10):    # numbers from o to 9
+#    print (i)       # output => 0 1 2 3 4 5 6 7 8 9
+# for i in xrange(1,10):    # numbers from 1 to 9
+#    print (i)       # output => 1 2 3 4 5 6 7 8 9
+# for i in xrange(1, 10, 2):    # skip by two for next
+#    print (i)       # output => 1 3 5 7 9
+
+
+s = "python"
+reversed_s = ""
+for char in s:
+    reversed_s = char + reversed_s
+print(reversed_s)
+
+s = "radar"
+is_palindrome = True
+n = 0
+
+for char in s:
+    n += 1
+    
+for i in range(n//2):
+    if s[i] != s[n-1-i]:
+        is_palindrome = False
+        break
+   
+print(is_palindrome)
+
+s1 = "listen"
+s2 = "silent"
+
+is_anagram = True
+
+len1 = 0
+for char in s1: len1 +=1
+
+len2 = 0
+for char in s2: len2 +=1
+
+if len1 != len2:
+    is_anagram = False
+else:
+    for char in s1:
+        count1 = 0
+        for c in s1:
+            if c == char : count1 += 1
+         
+        count2 = 0
+        for c in s2:
+            if c== char : count2 += 1
+
+        if count1 != count2:
+            is_anagram = False
+            break
+      
+print(is_anagram)
+
+
+n = 29
+
+is_prime = True
+
+if n<2:
+    is_prime = False
+else:
+    for i in range(2,n):
+        if n % i == 0:
+            is_prime = False
+            break
+print(is_prime)
+
+
+
+
+
+
+n = 34
+is_prime = True
+
+if n<2:
+    is_prime = False
+else:
+    for i in range(2,n):
+        if n%i == 0:
+            is_prime = False
+            break
+print(is_prime)
+
+
+n = 5
+fact = 1
+
+for i in range(1,n+1):
+    fact = fact*i
+print(fact)
+
+num = [12,33,45,33,56,77,30,20]
+largest = num[0]
+
+for n in num:
+    if n > largest:
+        largest = n
+print(largest)
+
+nums = [22,44,66,34,67]
+largest = -float('inf')
+second_largest = -float('inf')
+
+
+for n in nums:
+    if n>largest:
+        second_largest = largest
+        largest = n
+    elif n > second_largest and n != largest:
+        second_largest = n
+print(second_largest)
+
+nums = [1,2,2,3,4,54,45,3,2,2,3,45]
+unique_list = []
+for i in nums:
+    found = False
+    for u in unique_list:
+        if i == u:
+            found = True
+            break
+    if not found:
+         unique_list += [n]
+print(unique_list)
+
+nums = [1,2,2,3,4,54,45,3,2,2,3,45]
+unique_list = []
+for n in nums:
+    found = False
+    for u in unique_list:
+        if n == u:
+            found = True
+            break
+    if not found:
+        unique_list += [n] # Manual append
+print(unique_list)
+
+
+nums  = [1,2,4,5]
+n = 5
+expected_sum = 0
+
+for i in range(1,n+1):
+    expected_sum += i
+
+actual_sum = 0
+for num in nums:
+    actual_sum += num
+
+print(expected_sum - actual_sum)
+
+s = "hello"
+reversed_s = ""
+
+for ch in s:
+    reversed_s = ch + reversed_s
+print(reversed_s)
+
+s = "radar"
+rev = ""
+
+for i in s:
+    rev = i + rev
+
+if s == rev:
+    print("palindrome")
+else:
+    print("not palindrome")
